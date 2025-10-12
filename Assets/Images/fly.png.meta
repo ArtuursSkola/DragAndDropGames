@@ -1,0 +1,1433 @@
+fileFormatVersion: 2
+guid: 7f9d72961bfb6b64094ba2839142b7d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5352286359449648278
+    second: fly_0
+  - first:
+      213: 6843129032921346866
+    second: fly_1
+  - first:
+      213: -577472684307798074
+    second: fly_2
+  - first:
+      213: -7030490577846672973
+    second: fly_3
+  - first:
+      213: 7551582495221066229
+    second: fly_4
+  - first:
+      213: 7052353571005762725
+    second: fly_5
+  - first:
+      213: 5571602402917622367
+    second: fly_6
+  - first:
+      213: -46468130576277366
+    second: fly_7
+  - first:
+      213: 6967819863540319931
+    second: fly_8
+  - first:
+      213: -2124115683389910881
+    second: fly_9
+  - first:
+      213: 6625348985452500428
+    second: fly_10
+  - first:
+      213: 984436547229318749
+    second: fly_11
+  - first:
+      213: -4342876633011069185
+    second: fly_12
+  - first:
+      213: 7058617540617971771
+    second: fly_13
+  - first:
+      213: -9183107752119602603
+    second: fly_14
+  - first:
+      213: -8174876050515484971
+    second: fly_15
+  - first:
+      213: 6319033051380412618
+    second: fly_16
+  - first:
+      213: 6506678271305384179
+    second: fly_17
+  - first:
+      213: -4489378971150748416
+    second: fly_18
+  - first:
+      213: -3740879627648861968
+    second: fly_19
+  - first:
+      213: -3226177304729104621
+    second: fly_20
+  - first:
+      213: -6004737657561178517
+    second: fly_21
+  - first:
+      213: -6698834815182167027
+    second: fly_22
+  - first:
+      213: 4826457369165580313
+    second: fly_23
+  - first:
+      213: 4745524631511785181
+    second: fly_24
+  - first:
+      213: 1001265373043373356
+    second: fly_25
+  - first:
+      213: 7039266931087151988
+    second: fly_26
+  - first:
+      213: 7137319546896309254
+    second: fly_27
+  - first:
+      213: -6155166875150421264
+    second: fly_28
+  - first:
+      213: -7786890601350160754
+    second: fly_29
+  - first:
+      213: -288057293378794587
+    second: fly_30
+  - first:
+      213: 3691990004310265141
+    second: fly_31
+  - first:
+      213: 2003854253211910823
+    second: fly_32
+  - first:
+      213: 3911158083183171541
+    second: fly_33
+  - first:
+      213: 457098981803725486
+    second: fly_34
+  - first:
+      213: 4207212818397510314
+    second: fly_35
+  - first:
+      213: 7259731053800113708
+    second: fly_36
+  - first:
+      213: -603753140138164283
+    second: fly_37
+  - first:
+      213: 2322989036328381145
+    second: fly_38
+  - first:
+      213: -1823795077300400322
+    second: fly_39
+  - first:
+      213: 3948778740489247950
+    second: fly_40
+  - first:
+      213: -9148507212174420256
+    second: fly_41
+  - first:
+      213: -3219799618345823767
+    second: fly_42
+  - first:
+      213: 1378238031252427582
+    second: fly_43
+  - first:
+      213: 770027215538419956
+    second: fly_44
+  - first:
+      213: 8750051521632912865
+    second: fly_45
+  - first:
+      213: -8929315033289456662
+    second: fly_46
+  - first:
+      213: -3239631821063594437
+    second: fly_47
+  - first:
+      213: 1503971927427686415
+    second: fly_48
+  - first:
+      213: 1041159405914946497
+    second: fly_49
+  - first:
+      213: 9002006975723505180
+    second: fly_50
+  - first:
+      213: -7350716267538640005
+    second: fly_51
+  - first:
+      213: -3339034251305656354
+    second: fly_52
+  - first:
+      213: -2126974972688410984
+    second: fly_53
+  - first:
+      213: 1272033282307798326
+    second: fly_54
+  - first:
+      213: 1437600502113385476
+    second: fly_55
+  - first:
+      213: -7621094903143066687
+    second: fly_56
+  - first:
+      213: 8313431535857241358
+    second: fly_57
+  - first:
+      213: -810414776163868481
+    second: fly_58
+  - first:
+      213: -6712246263565282955
+    second: fly_59
+  - first:
+      213: -8356409174545834470
+    second: fly_60
+  - first:
+      213: 2283995970550053615
+    second: fly_61
+  - first:
+      213: -7101848558695961821
+    second: fly_62
+  - first:
+      213: -3370816555204844113
+    second: fly_63
+  - first:
+      213: 365195757897257345
+    second: fly_64
+  - first:
+      213: 25341495544195779
+    second: fly_65
+  - first:
+      213: 8127512605290177455
+    second: fly_66
+  - first:
+      213: 2354805150935566641
+    second: fly_67
+  - first:
+      213: -696169513027827861
+    second: fly_68
+  - first:
+      213: -205914092766501840
+    second: fly_69
+  - first:
+      213: 1584247263286904560
+    second: fly_70
+  - first:
+      213: 2609237606663315596
+    second: fly_71
+  - first:
+      213: -7349820270688325225
+    second: fly_72
+  - first:
+      213: -2931081962519980998
+    second: fly_73
+  - first:
+      213: -6832593013210943105
+    second: fly_74
+  - first:
+      213: -5713348944523752410
+    second: fly_75
+  - first:
+      213: 1336542346852811064
+    second: fly_76
+  - first:
+      213: 6829227983332421896
+    second: fly_77
+  - first:
+      213: -2995635897892068661
+    second: fly_78
+  - first:
+      213: -8790758646370881973
+    second: fly_79
+  - first:
+      213: -3678975854998323109
+    second: fly_80
+  - first:
+      213: 4735137154818366845
+    second: fly_81
+  - first:
+      213: 5610993625668630522
+    second: fly_82
+  - first:
+      213: -8926699545995736147
+    second: fly_83
+  - first:
+      213: 6968007218313104289
+    second: fly_84
+  - first:
+      213: 3507527676739819941
+    second: fly_85
+  - first:
+      213: 1619010583567493601
+    second: fly_86
+  - first:
+      213: 2865818217376809815
+    second: fly_87
+  - first:
+      213: -8227009681533958073
+    second: fly_88
+  - first:
+      213: 4663680639632772912
+    second: fly_89
+  - first:
+      213: -4884590731895568315
+    second: fly_90
+  - first:
+      213: -4364214318453789311
+    second: fly_91
+  - first:
+      213: 4441630396763177903
+    second: fly_92
+  - first:
+      213: -8405193913833384785
+    second: fly_93
+  - first:
+      213: 6811599021886804794
+    second: fly_94
+  - first:
+      213: 5912309882664473826
+    second: fly_95
+  - first:
+      213: -2584962963792445448
+    second: fly_96
+  - first:
+      213: 9085230526382156865
+    second: fly_97
+  - first:
+      213: 9022351376776736951
+    second: fly_98
+  - first:
+      213: 1438645560124074378
+    second: fly_99
+  - first:
+      213: -7727601757597447937
+    second: fly_100
+  - first:
+      213: 602376653209140821
+    second: fly_101
+  - first:
+      213: 5514455601164104919
+    second: fly_102
+  - first:
+      213: -8273000781915228153
+    second: fly_103
+  - first:
+      213: -1876075469676715422
+    second: fly_104
+  - first:
+      213: 7284999003000157644
+    second: fly_105
+  - first:
+      213: -7072596431144605375
+    second: fly_106
+  - first:
+      213: -3149895077653833694
+    second: fly_107
+  - first:
+      213: 4825362351654595498
+    second: fly_108
+  - first:
+      213: 8186780838631403708
+    second: fly_109
+  - first:
+      213: -4892051380918985306
+    second: fly_110
+  - first:
+      213: 6041379005850649127
+    second: fly_111
+  - first:
+      213: -524990395912162509
+    second: fly_112
+  - first:
+      213: -2109277504802242264
+    second: fly_113
+  - first:
+      213: 5291731899853862839
+    second: fly_114
+  - first:
+      213: -8426095402443526080
+    second: fly_115
+  - first:
+      213: -7660153009300783728
+    second: fly_116
+  - first:
+      213: -950653391787012928
+    second: fly_117
+  - first:
+      213: 7496348407931706293
+    second: fly_118
+  - first:
+      213: 2221519385640146056
+    second: fly_119
+  - first:
+      213: 8925823365314073692
+    second: fly_120
+  - first:
+      213: 3126843370606619719
+    second: fly_121
+  - first:
+      213: 307596370772392955
+    second: fly_122
+  - first:
+      213: 135873732549693672
+    second: fly_123
+  - first:
+      213: -6089777042314657392
+    second: fly_124
+  - first:
+      213: -8769109014522423535
+    second: fly_125
+  - first:
+      213: 7982384575495743814
+    second: fly_126
+  - first:
+      213: -2632937202383587218
+    second: fly_127
+  - first:
+      213: -1289959058509902210
+    second: fly_128
+  - first:
+      213: -4794860381876370005
+    second: fly_129
+  - first:
+      213: -6681948895158918305
+    second: fly_130
+  - first:
+      213: 3548832758799692168
+    second: fly_131
+  - first:
+      213: -633900645177455293
+    second: fly_132
+  - first:
+      213: 7248566897376099133
+    second: fly_133
+  - first:
+      213: -5430498836418667526
+    second: fly_134
+  - first:
+      213: 1212118677691474766
+    second: fly_135
+  - first:
+      213: -2845852090981307474
+    second: fly_136
+  - first:
+      213: -8814902589592476617
+    second: fly_137
+  - first:
+      213: 5817055994453890535
+    second: fly_138
+  - first:
+      213: -3119353072799859685
+    second: fly_139
+  - first:
+      213: -9080594790872717723
+    second: fly_140
+  - first:
+      213: -8845064344832149809
+    second: fly_141
+  - first:
+      213: -5177931654218685441
+    second: fly_142
+  - first:
+      213: -3314203023822827689
+    second: fly_143
+  - first:
+      213: -7077895195510193996
+    second: fly_144
+  - first:
+      213: 2102736505146511781
+    second: fly_145
+  - first:
+      213: 2218501257575197339
+    second: fly_146
+  - first:
+      213: 8857924435055893730
+    second: fly_147
+  - first:
+      213: 8948884944465801233
+    second: fly_148
+  - first:
+      213: -4831533321562997145
+    second: fly_149
+  - first:
+      213: 8528887062257120659
+    second: fly_150
+  - first:
+      213: -4943430721777048928
+    second: fly_151
+  - first:
+      213: 5013638773407423331
+    second: fly_152
+  - first:
+      213: 4681649828383460670
+    second: fly_153
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fly_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07cfab4e2be3e248ba9301cc5b5cc52
+      internalID: -565332138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f66e5741ee60154aad744ee711de206
+      internalID: -698086542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2efcf118b4a81e44820f1fd297c8ed9
+      internalID: 1325031117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda5eb0be6f08e34b925cb74be45437d
+      internalID: 1809166085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3475696e5c8d442affd04e41b03f47
+      internalID: -241750410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e01b15803aec94e950b583dae146ac
+      internalID: 8344366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 565
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feabbd6c1cb3efd4dbcb75877ebe71f2
+      internalID: 1973463036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 465
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab55053d85ab464478ba2085587356f5
+      internalID: 598690148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a2d466324c4f544a4d4f8473a9b852
+      internalID: 74907302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990f72a3a553dd64fadceadb915592af
+      internalID: -1883553387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235e9dfc2cb556459b89d5033a982fd
+      internalID: -1948973437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf7e7833954f1469b2c9daf02f33f7
+      internalID: 1497135830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86cd01b59ab2e947ad70bd3de0ee611
+      internalID: 880162248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a4631e6eecdf84eb3adb9ff367393b
+      internalID: -522708977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 365
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeb3a1fa9ca04e48bd0d4960cb36fcc
+      internalID: 853041360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476c42aa57d80eb45aad9b52169caa65
+      internalID: 1387012473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5477b10c993de8c47bc0b9c8970ab374
+      internalID: -1806895302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3568215bc691eb046a97da1ca49a7493
+      internalID: -1987257809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23ad13fbf66f254ab1cde2c4dd6730f
+      internalID: 1912598578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc686bf3dfbafe447ba6efe15a54371c
+      internalID: -18628105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639b679174cc3fb45b7c6dc4b2f43a56
+      internalID: -538164357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_21
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 265
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91c330c0ff825c439510165b8a6ec5c
+      internalID: 1929489410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fade7a631f9a16748820e7dedcc2c8da
+      internalID: -2033960009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1afa43e88f91344083a2226da3a92e8
+      internalID: 397484307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634abb241a8467b47a41920dea58a83b
+      internalID: 280442762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb5d5f87cf74e14aa2ddf6974f0f7b9
+      internalID: 1851543049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_26
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0753ad52c5813b48ac1ca611fddac39
+      internalID: -1913515158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_27
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ac7ce23145fc54fa27c693018a9c5e
+      internalID: 1525108703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 165
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f97be273a69e4469c122afdbcf1a88
+      internalID: -1916446114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c85deedc41f5147af88f2db7873c74
+      internalID: 2107269299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9966585aea1199643bc3bbbfce14c52a
+      internalID: 664846016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b49d7c892703d64bbd0f115d392232f
+      internalID: 1730551558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43209f093c1ddd240b6e540bac8a63d1
+      internalID: 1110344133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_33
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0165d4f4bba5ee468d42966248ff930
+      internalID: -1795828326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26625d7ef900a604cbb3b34fd51a7364
+      internalID: 524843940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_35
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 65
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307c81dc1c328c14bb309e1b8cb48aae
+      internalID: -1078642727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 778509eb43f8cff46800f45e96dea1df
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fly_0: -565332138
+      fly_1: -698086542
+      fly_10: -1948973437
+      fly_11: 1497135830
+      fly_12: 880162248
+      fly_13: -522708977
+      fly_14: 853041360
+      fly_15: 1387012473
+      fly_16: -1806895302
+      fly_17: -1987257809
+      fly_18: 1912598578
+      fly_19: -18628105
+      fly_2: 1325031117
+      fly_20: -538164357
+      fly_21: 1929489410
+      fly_22: -2033960009
+      fly_23: 397484307
+      fly_24: 280442762
+      fly_25: 1851543049
+      fly_26: -1913515158
+      fly_27: 1525108703
+      fly_28: -1916446114
+      fly_29: 2107269299
+      fly_3: 1809166085
+      fly_30: 664846016
+      fly_31: 1730551558
+      fly_32: 1110344133
+      fly_33: -1795828326
+      fly_34: 524843940
+      fly_35: -1078642727
+      fly_4: -241750410
+      fly_5: 8344366
+      fly_6: 1973463036
+      fly_7: 598690148
+      fly_8: 74907302
+      fly_9: -1883553387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

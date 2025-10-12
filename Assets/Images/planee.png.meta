@@ -1,0 +1,1775 @@
+fileFormatVersion: 2
+guid: 38f78ad27b3a43849af5931078e69305
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2610846182323605106
+    second: planee_0
+  - first:
+      213: -5481535532004656689
+    second: planee_1
+  - first:
+      213: -6010879017160335924
+    second: planee_2
+  - first:
+      213: 8507687133558806489
+    second: planee_3
+  - first:
+      213: -6467828868084594138
+    second: planee_4
+  - first:
+      213: 3171698492896563991
+    second: planee_5
+  - first:
+      213: -2373650542946142466
+    second: planee_6
+  - first:
+      213: 2886490764124823000
+    second: planee_7
+  - first:
+      213: 8395928121496841665
+    second: planee_8
+  - first:
+      213: 377471395662424065
+    second: planee_9
+  - first:
+      213: 4880273412117444307
+    second: planee_10
+  - first:
+      213: 1932677999723574261
+    second: planee_11
+  - first:
+      213: -1063769584414537836
+    second: planee_12
+  - first:
+      213: 8113581315625363571
+    second: planee_13
+  - first:
+      213: -1427403601528887986
+    second: planee_14
+  - first:
+      213: 705834414778466195
+    second: planee_15
+  - first:
+      213: -2309120597342159352
+    second: planee_16
+  - first:
+      213: -1943250811525851346
+    second: planee_17
+  - first:
+      213: -1365154986821889194
+    second: planee_18
+  - first:
+      213: 3824536536668009781
+    second: planee_19
+  - first:
+      213: 4522457530424563986
+    second: planee_20
+  - first:
+      213: -2354853604517046846
+    second: planee_21
+  - first:
+      213: -6763703312177931448
+    second: planee_22
+  - first:
+      213: 4413901184104445808
+    second: planee_23
+  - first:
+      213: 5592486918352882922
+    second: planee_24
+  - first:
+      213: -4101943668698641751
+    second: planee_25
+  - first:
+      213: 4898054599729404641
+    second: planee_26
+  - first:
+      213: 2250650009100178897
+    second: planee_27
+  - first:
+      213: 2130144668403300583
+    second: planee_28
+  - first:
+      213: -2931147613279947464
+    second: planee_29
+  - first:
+      213: 889437768429375730
+    second: planee_30
+  - first:
+      213: -1960669393701697317
+    second: planee_31
+  - first:
+      213: -995284703101495409
+    second: planee_32
+  - first:
+      213: -6418728306917699944
+    second: planee_33
+  - first:
+      213: -1987200905496718782
+    second: planee_34
+  - first:
+      213: 2758648945253031715
+    second: planee_35
+  - first:
+      213: 4601105683868504537
+    second: planee_36
+  - first:
+      213: -5539349237667286844
+    second: planee_37
+  - first:
+      213: -1951690113020103652
+    second: planee_38
+  - first:
+      213: 440891593198280030
+    second: planee_39
+  - first:
+      213: -6039806612082323508
+    second: planee_40
+  - first:
+      213: 6317891042468509487
+    second: planee_41
+  - first:
+      213: 7540839372171242210
+    second: planee_42
+  - first:
+      213: 2787159590256541138
+    second: planee_43
+  - first:
+      213: 2815793159020649293
+    second: planee_44
+  - first:
+      213: -3735764804588820581
+    second: planee_45
+  - first:
+      213: 1217428221079684724
+    second: planee_46
+  - first:
+      213: 5798205508419211062
+    second: planee_47
+  - first:
+      213: 8833220837109966264
+    second: planee_48
+  - first:
+      213: -7948928738514242535
+    second: planee_49
+  - first:
+      213: -7251788735291015173
+    second: planee_50
+  - first:
+      213: 388421940422503910
+    second: planee_51
+  - first:
+      213: -5483126867094826735
+    second: planee_52
+  - first:
+      213: -4143859926831208746
+    second: planee_53
+  - first:
+      213: 7152981448123506575
+    second: planee_54
+  - first:
+      213: 745778229406517920
+    second: planee_55
+  - first:
+      213: -399984337666919110
+    second: planee_56
+  - first:
+      213: 8104986302750333635
+    second: planee_57
+  - first:
+      213: -8455873869375156543
+    second: planee_58
+  - first:
+      213: -2246749665340170910
+    second: planee_59
+  - first:
+      213: -5448419115244878194
+    second: planee_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planee_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c72a164b88a0a479da87ee6ca960b8
+      internalID: 146188582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1793dc743a39766438fb91717f7f68a8
+      internalID: 1578337974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1669efb8db4694442b96680ff7de5fd7
+      internalID: 514940613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a9931713cb0a341854a54184a82704
+      internalID: -1661918356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7016d3ee0bf6f674b89891e914fdce30
+      internalID: 337772629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb9f0ce06dab014ea22f4fd3d32d741
+      internalID: 1834565384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1368
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5ce384927fe7b4ba5e02b6cde0acbe
+      internalID: 1571847487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e34a5204de63374ab7c0e72e01c9230
+      internalID: 94812168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b121a554a5c2bbc40b6d0723dacb2bd1
+      internalID: 1746787344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433b1f4f12408c046a654975eb71955f
+      internalID: 48470661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18c1aab731867446ad32a9f551071be
+      internalID: -818365281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_11
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921570b934c50a04bb543d1845724737
+      internalID: -527632907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f9c5ef30b145a4ebd71366a2c25f63
+      internalID: 1771949274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1197
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa0dcad571d4f84384fde77781e84d1
+      internalID: 1458079055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5b0a47fe4a0aa49bcc8c39c6d433be
+      internalID: 805200038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f120818437337a34c975b05d28acccf0
+      internalID: 1505664206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555268e2dc4ab134288863a2560a251b
+      internalID: -2133534605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21d0e78e8bf6a47b7855aa6ab2cc1a
+      internalID: -184597045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082a26bf936483f47a2c55a7a00f265a
+      internalID: 1720323152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61dbf559c0b36244b1c35e277f5f7a6
+      internalID: -1513745368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1026
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a6a7d6297d03d46858b2e9314bbebe
+      internalID: -134586932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfe848a7e854134ab5e679d869a61cc
+      internalID: -869656879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6db4bf007b050d42b9ed93b0c7dec36
+      internalID: -1504348010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_23
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6106dff1a34c04eafb61bb7a9a0b78
+      internalID: -1343636937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b2736705546ac4495313b4a5dfb4b9
+      internalID: -811423591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8866d1d5748d284db508e1ea61c2172
+      internalID: -1907465139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7139d6d15ace544ae8fdea3315d6af
+      internalID: 546130228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 855
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f389c5f542fb8d24396446c1b323efd5
+      internalID: -1360817821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ef8955c00ae7842946a8028c595ff2
+      internalID: -1084609741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7162624ac5d5aca4eb7b9804682af309
+      internalID: -1119504841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_30
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027a7965a838f4f4f856006d5d5b8191
+      internalID: -1050612580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05e09a4ff4227340a5b6be904e0cdac
+      internalID: -476515503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ac3cf31c183884a854352c7df859ff
+      internalID: 1341851822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_33
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15fc32cfe05e89419202a8315694a11
+      internalID: 495940133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 684
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042f42a875ff976408408493b829220f
+      internalID: 454878500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f4d649350b8d9448b73dce5ef37e70
+      internalID: 1087061723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c7b7527997b414f87802db7298179d
+      internalID: -1338273131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_37
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f598c3d9eb7532a42b267ba3ebba0e4a
+      internalID: 1016975553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc625266953030148adcbad5328d8f4c
+      internalID: -747837450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_39
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5be142d297209409a135c788aee59d
+      internalID: -1299625554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7b7fdb45ed4b04b97b46edbdd7f495
+      internalID: 588592974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_41
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 513
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb93b8587da7fe49b9556d2ddb712f8
+      internalID: 357752290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45efd130b78f1546bae376b073acf9d
+      internalID: -1138365390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cd04428737dea47ba8ed9d274ade49
+      internalID: 584443739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2826655ef8e638e439e6bda48e8492c4
+      internalID: -380528910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_45
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bf18758f00b104b93e0840cc95c651
+      internalID: 77783150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5292f8bdc7e72fa409eefdc22b79cf12
+      internalID: -746488985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_47
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f81b77a03baaa459bc2b05820d75c6
+      internalID: 477238298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_48
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 342
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5d752e478e8f5439da97245dbc27d6
+      internalID: 256759373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4b6cfa23e16e746965a9f7d7366221
+      internalID: -471712926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893f48710921dd143a66942b8235dfb9
+      internalID: 1417265671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_51
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a6dd1b1603ad478eb2ba5cf32ea52
+      internalID: -281419143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_52
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359e59a4ee37044e958bbf96daf4c8f
+      internalID: -1226241369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_53
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d9721bd6d8f2a4ea4d9ac058317394
+      internalID: -24840345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_54
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eae36eaa04ced24d889ab99396ca021
+      internalID: 1912023416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_55
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 171
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e661a3bb0163f3449bbb55bd04d3106
+      internalID: -919063143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0a0dea90c98c24ab5a630b158ffbb8
+      internalID: 156693079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c1f857ac06338419ac7121243512a9
+      internalID: -937733193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_58
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043653b6639232d4eb675e4d982a54ab
+      internalID: -78188343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_59
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b84e82bfe1a9d4fab5d1f06b4540b8
+      internalID: 784998891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_60
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6bca4c994b76944bed31f9441fdc99
+      internalID: -1775328084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_61
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea41e92074f20746a07675447c89b3a
+      internalID: 1711812293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planee_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19c74aae04e1534db37887828ccc044
+      internalID: 877004115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e62bdc56bb689344e94dde3b6c564d3d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      planee_0: 146188582
+      planee_1: 1578337974
+      planee_10: -818365281
+      planee_11: -527632907
+      planee_12: 1771949274
+      planee_13: 1458079055
+      planee_14: 805200038
+      planee_15: 1505664206
+      planee_16: -2133534605
+      planee_17: -184597045
+      planee_18: 1720323152
+      planee_19: -1513745368
+      planee_2: 514940613
+      planee_20: -134586932
+      planee_21: -869656879
+      planee_22: -1504348010
+      planee_23: -1343636937
+      planee_24: -811423591
+      planee_25: -1907465139
+      planee_26: 546130228
+      planee_27: -1360817821
+      planee_28: -1084609741
+      planee_29: -1119504841
+      planee_3: -1661918356
+      planee_30: -1050612580
+      planee_31: -476515503
+      planee_32: 1341851822
+      planee_33: 495940133
+      planee_34: 454878500
+      planee_35: 1087061723
+      planee_36: -1338273131
+      planee_37: 1016975553
+      planee_38: -747837450
+      planee_39: -1299625554
+      planee_4: 337772629
+      planee_40: 588592974
+      planee_41: 357752290
+      planee_42: -1138365390
+      planee_43: 584443739
+      planee_44: -380528910
+      planee_45: 77783150
+      planee_46: -746488985
+      planee_47: 477238298
+      planee_48: 256759373
+      planee_49: -471712926
+      planee_5: 1834565384
+      planee_50: 1417265671
+      planee_51: -281419143
+      planee_52: -1226241369
+      planee_53: -24840345
+      planee_54: 1912023416
+      planee_55: -919063143
+      planee_56: 156693079
+      planee_57: -937733193
+      planee_58: -78188343
+      planee_59: 784998891
+      planee_6: 1571847487
+      planee_60: -1775328084
+      planee_61: 1711812293
+      planee_62: 877004115
+      planee_7: 94812168
+      planee_8: 1746787344
+      planee_9: 48470661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
