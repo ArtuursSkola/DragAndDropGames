@@ -9,7 +9,8 @@ public class VehicleSpawner : MonoBehaviour
     public Transform carSpawnParent;       // Car UI parent (inside Canvas)
     public Transform placeSpawnParent;     // Drop place UI parent (inside Canvas)
     public ObjectScript objectScript;      // Reference to ObjectScript
-
+    public RectTransform timerRect; // Assign this in the Inspector
+    public float timerPadding = 40f; // Extra padding around the timer
 
     public int numberToSpawn = 5;
 
@@ -49,31 +50,50 @@ void SpawnCarsAndPlaces()
     // Keep track of all used positions
     List<Vector2> usedPositions = new List<Vector2>();
 
-    for (int i = 0; i < spawnCount; i++)
-    {
-        int prefabIndex = indices[i];
+for (int i = 0; i < spawnCount; i++)
+{
+    int prefabIndex = indices[i];
 
-        // Find a valid position for the car
-        Vector2 carPos = GetNonOverlappingPosition(usedPositions);
-        GameObject car = Instantiate(carPrefabs[prefabIndex], carSpawnParent);
-        car.GetComponent<RectTransform>().anchoredPosition = carPos;
-        usedPositions.Add(carPos);
+    // --- Spawn Car ---
+    Vector2 carPos = GetNonOverlappingPosition(usedPositions);
+    GameObject car = Instantiate(carPrefabs[prefabIndex], carSpawnParent);
+    RectTransform carRT = car.GetComponent<RectTransform>();
+    carRT.anchoredPosition = carPos;
 
-        var drag = car.GetComponent<DragAndDropScript>();
-        if (drag != null && drag.screenBou == null)
-            drag.screenBou = FindObjectOfType<ScreenBoundriesScript>();
+    // ✅ Random rotation between -30° and +30°
+    float carRotation = Random.Range(-30f, 30f);
+    carRT.localRotation = Quaternion.Euler(0f, 0f, carRotation);
 
-        objectScript.vehicles[i] = car;
-        objectScript.startCoordinates[i] = car.GetComponent<RectTransform>().anchoredPosition;
+    // Keep the prefab’s original scale (don’t change)
+    // carRT.localScale = carRT.localScale;
 
-        // Find a valid position for the place
-        Vector2 placePos = GetNonOverlappingPosition(usedPositions);
-        GameObject place = Instantiate(placePrefabs[prefabIndex], placeSpawnParent);
-        place.GetComponent<RectTransform>().anchoredPosition = placePos;
-        usedPositions.Add(placePos);
-    }
+    usedPositions.Add(carPos);
 
-    objectScript.Initialize();
+    var drag = car.GetComponent<DragAndDropScript>();
+    if (drag != null && drag.screenBou == null)
+        drag.screenBou = FindObjectOfType<ScreenBoundriesScript>();
+
+    objectScript.vehicles[i] = car;
+    objectScript.startCoordinates[i] = carRT.anchoredPosition;
+
+    // --- Spawn Place ---
+    Vector2 placePos = GetNonOverlappingPosition(usedPositions);
+    GameObject place = Instantiate(placePrefabs[prefabIndex], placeSpawnParent);
+    RectTransform placeRT = place.GetComponent<RectTransform>();
+    placeRT.anchoredPosition = placePos;
+
+    // ✅ Random rotation for place (-30° to +30°)
+    float placeRotation = Random.Range(-30f, 30f);
+    placeRT.localRotation = Quaternion.Euler(0f, 0f, placeRotation);
+
+    // Keep original prefab scale (no change)
+    // placeRT.localScale = placeRT.localScale;
+
+    usedPositions.Add(placePos);
+}
+
+objectScript.Initialize();
+
 }
 
 // Helper to get a random position not too close to any in usedPositions
@@ -99,6 +119,8 @@ Vector2 GetNonOverlappingPosition(List<Vector2> usedPositions)
         Vector2 candidate = new Vector2(x, y);
 
         bool overlaps = false;
+
+        // Check overlap with other spawned objects
         foreach (var pos in usedPositions)
         {
             if (Vector2.Distance(candidate, pos) < minSpawnDistance)
@@ -107,14 +129,31 @@ Vector2 GetNonOverlappingPosition(List<Vector2> usedPositions)
                 break;
             }
         }
+
+        // Check overlap with timer
+        if (!overlaps && timerRect != null)
+        {
+            Vector2 timerCenter = timerRect.anchoredPosition;
+            Vector2 timerSize = timerRect.rect.size;
+            Rect timerArea = new Rect(
+                timerCenter - timerSize / 2f - Vector2.one * timerPadding,
+                timerSize + Vector2.one * timerPadding * 2f
+            );
+
+            if (timerArea.Contains(candidate))
+            {
+                overlaps = true;
+            }
+        }
+
         if (!overlaps)
             return candidate;
     }
-    // If we can't find a non-overlapping position, just return a random one
-    return new Vector2(
-        Random.Range(-width / 2 + paddingX, width / 2 - paddingX),
-        Random.Range(-height / 2 + paddingY, height / 2 - paddingY)
-    );
+
+    // fallback: just return a random position (may overlap)
+    float fallbackX = Random.Range(-width / 2 + paddingX, width / 2 - paddingX);
+    float fallbackY = Random.Range(-height / 2 + paddingY, height / 2 - paddingY);
+    return new Vector2(fallbackX, fallbackY);
 }
 
 
