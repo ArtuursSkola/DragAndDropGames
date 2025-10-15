@@ -84,7 +84,7 @@ public class FlyingObjectsControllerScript : MonoBehaviour
     public void TriggerExplosion()
     {
         isExploding = true;
-        objectScript.effects.PlayOneShot(objectScript.audioCli[15], 1000000f);
+        objectScript.effects.PlayOneShot(objectScript.audioCli[15], 5f);
 
         if (TryGetComponent<Animator>(out Animator animator))
         {
@@ -95,23 +95,23 @@ public class FlyingObjectsControllerScript : MonoBehaviour
         StartCoroutine(RecoverColor(0.4f));
 
         StartCoroutine(Vibrate());
-        StartCoroutine(WaitBeforeExpload());
+        StartCoroutine(WaitBeforeExplode());
     }
 
-    IEnumerator WaitBeforeExpload()
+    IEnumerator WaitBeforeExplode()
     {
         float radius = 0f;
         if (TryGetComponent<CircleCollider2D>(out CircleCollider2D circleCollider))
         {
             radius = circleCollider.radius * transform.lossyScale.x;
         }
-        ExploadAndDestroy(radius);
+        ExplodeAndDestroy(radius);
         yield return new WaitForSeconds(1f);
-        ExploadAndDestroy(radius);
+        ExplodeAndDestroy(radius);
         Destroy(gameObject);
     }
 
-    void ExploadAndDestroy(float radius)
+    void ExplodeAndDestroy(float radius)
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radius);
 
