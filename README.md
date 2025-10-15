@@ -22,6 +22,8 @@ Unity 2D Drag And Drop games for children 6+
 
 ## Sākumlapa
 ![Gameplay Screenshot](Assets/Images/first.png)
+Kā redzams mums šeit ir sākumalapa, kur lietotājs var izvēlēties pirmo vai otro spēli, kā arī iziet no spēles. Šī sākumlapa ir ļoti piemērota bērniem un rada ļoti draudzīgu atmosfēru.
+## Pirmā spēle
 
 
 
