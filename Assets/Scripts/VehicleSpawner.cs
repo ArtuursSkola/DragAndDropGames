@@ -169,8 +169,8 @@ Vector2 GetRandomPosition()
     float height = parentRect.rect.height;
 
     // Padding to keep objects inside the map
-    float paddingX = 650f; // adjust as needed for your car/place size
-    float paddingY = 650f;
+    float paddingX = 60f; // adjust as needed for your car/place size
+    float paddingY = 60f;
 
     // anchoredPosition is centered at (0,0)
     float x = Random.Range(-width / 2 + paddingX, width / 2 - paddingX);
