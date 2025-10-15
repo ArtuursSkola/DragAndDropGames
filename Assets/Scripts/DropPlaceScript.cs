@@ -66,7 +66,7 @@ public void OnDrop(PointerEventData eventData)
                 switch (eventData.pointerDrag.tag)
                 {
                     case "Garbage": audioIndex = 2; break;
-                    case "Medicene": audioIndex = 3; break;
+                    case "Medicine": audioIndex = 3; break;
                     case "Fire": audioIndex = 4; break;
                     case "Bus": audioIndex = 5; break;
                     case "B2": audioIndex = 6; break;
