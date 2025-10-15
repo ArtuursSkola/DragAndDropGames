@@ -21,7 +21,7 @@ Unity 2D Drag And Drop games for children 6+
 2D unity spēle, kas domāta bērniem ar drag&drop mašīnas spēli un jautra atmosfrēra
 
 ## Sākumlapa
-![Gameplay Screenshot](Images/first.png)
+![Gameplay Screenshot](Assets/Images/first.png)
 
 
 
