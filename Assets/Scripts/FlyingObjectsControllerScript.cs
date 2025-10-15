@@ -14,7 +14,7 @@ public class FlyingObjectsControllerScript : MonoBehaviour
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     private bool isFadingOut = false;
-    private bool isExploading = false;
+    private bool isExploding = false;
     private Image image;
     private Color originalColor;
 
@@ -54,7 +54,7 @@ public class FlyingObjectsControllerScript : MonoBehaviour
             isFadingOut = true;
         }
 
-        if (CompareTag("Bomb") && !isExploading &&
+        if (CompareTag("Bomb") && !isExploding &&
             RectTransformUtility.RectangleContainsScreenPoint(
                 rectTransform, Input.mousePosition, Camera.main))
         {
@@ -83,8 +83,8 @@ public class FlyingObjectsControllerScript : MonoBehaviour
 
     public void TriggerExplosion()
     {
-        isExploading = true;
-        objectScript.effects.PlayOneShot(objectScript.audioCli[15], 5f);
+        isExploding = true;
+        objectScript.effects.PlayOneShot(objectScript.audioCli[15], 1000000f);
 
         if (TryGetComponent<Animator>(out Animator animator))
         {
@@ -122,7 +122,7 @@ public class FlyingObjectsControllerScript : MonoBehaviour
                 FlyingObjectsControllerScript obj =
                     hitCollider.gameObject.GetComponent<FlyingObjectsControllerScript>();
 
-                if (obj != null && !obj.isExploading)
+                if (obj != null && !obj.isExploding)
                 {
                     obj.StartToDestroy();
                 }
