@@ -35,6 +35,6 @@ Kā redzams mēs uzvarējam un saņēmām 3 zvaigznītes, jo salikām visas 12 m
 ### Pirmās spēles zaudējuma logs
 ![Gameplay Screenshot](Assets/Images/fifth.png)
 Kā redzams mēs neielikām vismaz 8 mašīnas pareizajās vietās, jo mākoņi un lidmašīnas tās apēda, tādēļ mēs zaudējām un kā redzams mēs varam spēli sākt no sākuma vai aiziet atpakaļ uz sākuma lapu
-
+![Gameplay Screenshot](Assets/Images/now.jpeg)
 
 
