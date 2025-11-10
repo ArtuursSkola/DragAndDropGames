@@ -17,6 +17,8 @@ TagManager:
   - Police
   - Tractor2
   - Bomb
+  - InterstitialAdButton
+  - InterstitialButton
   layers:
   - Default
   - TransparentFX

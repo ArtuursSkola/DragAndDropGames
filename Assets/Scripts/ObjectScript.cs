@@ -85,11 +85,18 @@ public class ObjectScript : MonoBehaviour
     {
         if (winningWindow != null && scoreText != null)
         {
+            // Center camera on map before freezing time so the smooth move runs
+            var camScript = Object.FindFirstObjectByType<CameraScript>();
+            if (camScript != null)
+                camScript.CenterToMapCenter(0.6f);
+
             winningWindow.SetActive(true);
 
             // ✅ Pause timer and the game
             if (timer != null)
                 timer.PauseTimer();
+
+            // freeze gameplay after giving camera a short moment to start moving
             Time.timeScale = 0f;
 
             // Background

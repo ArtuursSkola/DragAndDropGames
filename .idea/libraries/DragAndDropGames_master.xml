@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="DragAndDropGames-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Image-20250908.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Images-20250908.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Release_files.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Sounds-20250908.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

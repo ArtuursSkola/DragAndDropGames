@@ -3,29 +3,27 @@ using UnityEngine.EventSystems;
 
 public class DropPlaceScript : MonoBehaviour, IDropHandler
 {
-
     private float placeZRot, vehicleZRot, rotDiff;
-    private Vector3 placeSiz, vehiclesSiz;
+    private Vector3 placeSiz, vehicleSiz;
     private float xSizeDiff, ySizeDiff;
     public ObjectScript objScript;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-        void Awake()
-        {
-            if (objScript == null)
-                objScript = FindObjectOfType<ObjectScript>();
-        }
-
-public void OnDrop(PointerEventData eventData)
-{
-    if ((eventData.pointerDrag != null) &&
-        Input.GetMouseButtonUp(0) && !Input.GetMouseButton(1) && !Input.GetMouseButton(2))
+    void Start()
     {
+        if (objScript == null)
+            objScript = Object.FindFirstObjectByType<ObjectScript>();
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (eventData.pointerDrag == null)
+            return;
+
         if (eventData.pointerDrag.tag.Equals(tag))
         {
             var dragRect = eventData.pointerDrag.GetComponent<RectTransform>();
             var placeRect = GetComponent<RectTransform>();
+
             if (dragRect == null || placeRect == null || objScript == null)
             {
                 Debug.LogWarning("RectTransform or objScript missing on dragged object or drop place.");
@@ -38,50 +36,50 @@ public void OnDrop(PointerEventData eventData)
             Debug.Log("Rotation difference: " + rotDiff);
 
             placeSiz = dragRect.localScale;
-            vehiclesSiz = placeRect.localScale;
-            xSizeDiff = Mathf.Abs(placeSiz.x - vehiclesSiz.x);
-            ySizeDiff = Mathf.Abs(placeSiz.y - vehiclesSiz.y);
+            vehicleSiz = placeRect.localScale;
+            xSizeDiff = Mathf.Abs(placeSiz.x - vehicleSiz.x);
+            ySizeDiff = Mathf.Abs(placeSiz.y - vehicleSiz.y);
             Debug.Log("X size difference: " + xSizeDiff);
             Debug.Log("Y size difference: " + ySizeDiff);
 
-                    if ((rotDiff <= 5 || (rotDiff >= 355 && rotDiff <= 360)) &&
-            (xSizeDiff <= 0.15 && ySizeDiff <= 0.15))
-        {
-            Debug.Log("Correct place");
-            objScript.rightPlace = true;
-            objScript.CarPlaced(); // Only call this ONCE here!
-
-            // Ensure both are under the same parent
-            dragRect.SetParent(placeRect.parent);
-
-            // Set anchoredPosition, rotation, and scale to match the place
-            dragRect.anchoredPosition = placeRect.anchoredPosition;
-            dragRect.localRotation = placeRect.localRotation;
-            dragRect.localScale = placeRect.localScale;
-
-            // Play correct sound if available
-            if (objScript.effects != null && objScript.audioCli != null)
+            // Adjusted threshold: tighter like teacher's (0.05)
+            if ((rotDiff <= 5 || (rotDiff >= 355 && rotDiff <= 360)) &&
+                (xSizeDiff <= 0.05 && ySizeDiff <= 0.05))
             {
-                int audioIndex = -1;
-                switch (eventData.pointerDrag.tag)
+                Debug.Log("Correct place");
+                objScript.rightPlace = true;
+                objScript.CarPlaced();
+
+                dragRect.SetParent(placeRect.parent);
+                dragRect.anchoredPosition = placeRect.anchoredPosition;
+                dragRect.localRotation = placeRect.localRotation;
+                dragRect.localScale = placeRect.localScale;
+
+                if (objScript.effects != null && objScript.audioCli != null)
                 {
-                    case "Garbage": audioIndex = 2; break;
-                    case "Medicine": audioIndex = 3; break;
-                    case "Fire": audioIndex = 4; break;
-                    case "Bus": audioIndex = 5; break;
-                    case "B2": audioIndex = 6; break;
-                    case "Concrete": audioIndex = 7; break;
-                    case "E46": audioIndex = 8; break;
-                    case "Tractor": audioIndex = 9; break;
-                    case "Excavator": audioIndex = 10; break;
-                    case "E61": audioIndex = 11; break;
-                    case "Police": audioIndex = 12; break;
-                    case "Tractor2": audioIndex = 13; break;
+                    int audioIndex = -1;
+                    switch (eventData.pointerDrag.tag)
+                    {
+                        case "Garbage": audioIndex = 2; break;
+                        case "Medicine": audioIndex = 3; break;
+                        case "Fire": audioIndex = 4; break;
+                        case "Bus": audioIndex = 5; break;
+                        case "B2": audioIndex = 6; break;
+                        case "Concrete": audioIndex = 7; break;
+                        case "E46": audioIndex = 8; break;
+                        case "Tractor": audioIndex = 9; break;
+                        case "Excavator": audioIndex = 10; break;
+                        case "E61": audioIndex = 11; break;
+                        case "Police": audioIndex = 12; break;
+                        case "Tractor2": audioIndex = 13; break;
+                        default:
+                            Debug.Log("Unknown tag detected");
+                            break;
+                    }
+                    if (audioIndex >= 0 && audioIndex < objScript.audioCli.Length && objScript.audioCli[audioIndex] != null)
+                        objScript.effects.PlayOneShot(objScript.audioCli[audioIndex]);
                 }
-                if (audioIndex >= 0 && audioIndex < objScript.audioCli.Length && objScript.audioCli[audioIndex] != null)
-                    objScript.effects.PlayOneShot(objScript.audioCli[audioIndex]);
             }
-        }
         }
         else
         {
@@ -113,12 +111,5 @@ public void OnDrop(PointerEventData eventData)
                 Debug.LogWarning("objScript.vehicles or startCoordinates is null!");
             }
         }
-    }
-}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

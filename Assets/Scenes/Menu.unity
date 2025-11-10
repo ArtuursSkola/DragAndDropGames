@@ -763,6 +763,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ef76aa53cb1f949bd0127b1e373a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &633030886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633030890}
+  - component: {fileID: 633030889}
+  - component: {fileID: 633030888}
+  - component: {fileID: 633030887}
+  m_Layer: 0
+  m_Name: Ads
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &633030887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633030886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e46a189016a28245a91860eaa1c4734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InterstitialAd
+  _androidAdUnitId: Interstitial_Android
+  isReady: 0
+  _interstitialAdButton: {fileID: 0}
+--- !u!114 &633030888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633030886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbbb33a7d76296499709cbfe1e212d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdsInitializer
+  _androidGameId: 5979992
+  _testMode: 1
+--- !u!114 &633030889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633030886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2249f0470c3b21469697e899421f73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdManager
+  adsInitializer: {fileID: 633030888}
+  interstitialAd: {fileID: 633030887}
+  turnOffInterstitialAd: 0
+--- !u!4 &633030890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633030886}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 256.06354, y: 1436.8582, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &684971506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,8 +1461,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 71.25989, y: -8.828613}
-  m_SizeDelta: {x: 142.5198, y: 17.6572}
+  m_AnchoredPosition: {x: -180.73358, y: -8.828613}
+  m_SizeDelta: {x: 1636.2559, y: 17.6572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429641801
 MonoBehaviour:
@@ -1436,6 +1514,7 @@ GameObject:
   - component: {fileID: 1519542952}
   - component: {fileID: 1519542951}
   - component: {fileID: 1519542950}
+  - component: {fileID: 1519542953}
   m_Layer: 5
   m_Name: Spele2
   m_TagString: Untagged
@@ -1518,6 +1597,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1519542953}
+        m_TargetAssemblyTypeName: ChangeScenesScript, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1519542951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1556,6 +1647,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519542948}
   m_CullTransparentMesh: 1
+--- !u!114 &1519542953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519542948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35baa83339d4bec4da811d1a194a2b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeScenesScript
 --- !u!1 &1598099924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,7 +1737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301, y: -354}
+  m_AnchoredPosition: {x: -230, y: -489.5}
   m_SizeDelta: {x: 261.8181, y: 184.8882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863490672
@@ -1873,3 +1976,4 @@ SceneRoots:
   - {fileID: 1234446684}
   - {fileID: 725505863}
   - {fileID: 1598099926}
+  - {fileID: 633030890}
