@@ -1311,7 +1311,7 @@ MonoBehaviour:
   adsInitializer: {fileID: 574702814}
   interstitialAd: {fileID: 574702816}
   turnOffInterstitialAd: 0
-  rewardedAds: {fileID: 0}
+  rewardedAds: {fileID: 574702818}
   turnOffRewardedAds: 0
 --- !u!114 &574702816
 MonoBehaviour:
@@ -1356,9 +1356,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RewardedAds
   _androidAdUnitId: Rewarded_Android
-  _adUnitId2: 
   _rewardedAdButton: {fileID: 616878818}
   flyingObjectManager: {fileID: 0}
+  isReady: 0
 --- !u!1 &610864077
 GameObject:
   m_ObjectHideFlags: 0

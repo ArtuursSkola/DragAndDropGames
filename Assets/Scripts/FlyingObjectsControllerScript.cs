@@ -29,8 +29,8 @@ public class FlyingObjectsControllerScript : MonoBehaviour
         image = GetComponent<Image>();
         originalColor = image != null ? image.color : Color.white;
 
-        objectScript = Object.FindFirstObjectByType<ObjectScript>();
-        screenBoundriesScript = Object.FindFirstObjectByType<ScreenBoundriesScript>();
+    objectScript = UnityEngine.Object.FindFirstObjectByType<ObjectScript>();
+    screenBoundriesScript = UnityEngine.Object.FindFirstObjectByType<ScreenBoundriesScript>();
 
         StartCoroutine(FadeIn());
     }

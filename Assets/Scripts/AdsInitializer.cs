@@ -19,9 +19,17 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
 #if UNITY_ANDROID || UNITY_EDITOR
         _gameId = _androidGameId;
 #endif
+        if (string.IsNullOrWhiteSpace(_gameId))
+        {
+            Debug.LogWarning("AdsInitializer: _androidGameId is empty. Skipping Advertisement.Initialize(). Set a valid Game ID in the Inspector to enable ads.");
+            return;
+        }
 
         if (!Advertisement.isInitialized && Advertisement.isSupported)
+        {
+            Debug.Log("AdsInitializer: Initializing Unity Ads with gameId=" + _gameId + " testMode=" + _testMode);
             Advertisement.Initialize(_gameId, _testMode, this);
+        }
     }
 
     public void OnInitializationComplete()

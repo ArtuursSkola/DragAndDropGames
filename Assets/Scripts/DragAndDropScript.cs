@@ -21,16 +21,28 @@ public class DragAndDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragH
         rectTra = GetComponent<RectTransform>();
 
         if (objectScr == null)
-            objectScr = Object.FindFirstObjectByType<ObjectScript>();
+              objectScr = UnityEngine.Object.FindFirstObjectByType<ObjectScript>();
 
         if (screenBou == null)
-            screenBou = Object.FindFirstObjectByType<ScreenBoundriesScript>();
+              screenBou = UnityEngine.Object.FindFirstObjectByType<ScreenBoundriesScript>();
 
         canvas = GetComponentInParent<Canvas>();
+        if (canvas == null)
+        {
+            // try to find any canvas in the scene as a fallback
+            canvas = UnityEngine.Object.FindFirstObjectByType<Canvas>();
+            if (canvas == null)
+            {
+                Debug.LogError("Canvas not found for DragAndDropScript");
+            }
+        }
+
         if (canvas != null)
-            uiCamera = canvas.worldCamera;
-        else
-            Debug.LogError("Canvas not found for DragAndDropScript");
+        {
+            uiCamera = canvas.worldCamera != null ? canvas.worldCamera : Camera.main;
+            if (uiCamera == null)
+                Debug.LogWarning("No camera assigned to Canvas and Camera.main is null. Drag-to-world conversions may fail.");
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)

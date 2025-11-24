@@ -11,7 +11,7 @@ public class DropPlaceScript : MonoBehaviour, IDropHandler
     void Start()
     {
         if (objScript == null)
-            objScript = Object.FindFirstObjectByType<ObjectScript>();
+            objScript = UnityEngine.Object.FindFirstObjectByType<ObjectScript>();
     }
 
     public void OnDrop(PointerEventData eventData)

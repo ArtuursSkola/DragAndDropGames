@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -71,7 +71,7 @@ for (int i = 0; i < spawnCount; i++)
 
     var drag = car.GetComponent<DragAndDropScript>();
     if (drag != null && drag.screenBou == null)
-        drag.screenBou = FindObjectOfType<ScreenBoundriesScript>();
+        drag.screenBou = UnityEngine.Object.FindFirstObjectByType<ScreenBoundriesScript>();
 
     objectScript.vehicles[i] = car;
     objectScript.startCoordinates[i] = carRT.anchoredPosition;

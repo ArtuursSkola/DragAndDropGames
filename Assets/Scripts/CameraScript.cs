@@ -38,7 +38,7 @@ public class CameraScript : MonoBehaviour
         }
 
         if (screenBoundries == null)
-            screenBoundries = Object.FindFirstObjectByType<ScreenBoundriesScript>();
+            screenBoundries = UnityEngine.Object.FindFirstObjectByType<ScreenBoundriesScript>();
     }
 
     void Start()
