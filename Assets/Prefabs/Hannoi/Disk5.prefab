@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54097c6cf93030348b33a8437774e63a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DiskUI
-  size: 1
+  size: 6
   rect: {fileID: 0}
   manager: {fileID: 0}

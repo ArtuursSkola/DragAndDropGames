@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 // CHANGES FOR ANDROID
 public class CameraScript : MonoBehaviour
@@ -39,6 +40,8 @@ public class CameraScript : MonoBehaviour
 
         if (screenBoundries == null)
             screenBoundries = UnityEngine.Object.FindFirstObjectByType<ScreenBoundriesScript>();
+    // listen for scene changes so we can apply scene-specific camera presets
+    SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start()
@@ -59,6 +62,62 @@ public class CameraScript : MonoBehaviour
         }
         // initialize max zoom limits based on world bounds
         UpdateMaxZoom();
+
+        // Apply any scene-specific camera configuration immediately (Start covers the initial scene)
+        ConfigureForScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ConfigureForScene(scene.name);
+    }
+
+    // Apply camera presets based on scene name. For the Hanoi scene we want landscape orientation
+    // and a camera zoom that shows the whole map (not cropped).
+    public void ConfigureForScene(string sceneName)
+    {
+        if (string.IsNullOrEmpty(sceneName))
+            return;
+
+        string s = sceneName.ToLowerInvariant();
+        if (s.Contains("hanoi") || s.Contains("hannoi"))
+        {
+            Debug.Log("CameraScript: Applying Hanoi scene camera preset (landscape & fit map)");
+
+            // try to set landscape orientation on mobile devices
+            #if !UNITY_EDITOR
+            try {
+                Screen.orientation = ScreenOrientation.LandscapeLeft;
+            } catch { }
+            #else
+            // In the Editor this has no effect, but we still adjust the camera size below.
+            #endif
+
+            if (screenBoundries != null && cam != null)
+            {
+                screenBoundries.RecalculateBounds();
+                Rect wb = screenBoundries.worldBounds;
+
+                float sizeForHeight = wb.height * 0.5f;
+                float sizeForWidth = (wb.width * 0.5f) / Mathf.Max(0.0001f, cam.aspect);
+                float fitAllSize = Mathf.Max(sizeForHeight, sizeForWidth);
+
+                cam.orthographicSize = fitAllSize;
+
+                // ensure zoom limits are updated after forcing a full-fit size
+                screenBoundries.RecalculateBounds();
+                UpdateMaxZoom();
+
+                // center camera instantly on map center
+                Vector3 center = new Vector3(wb.x + wb.width * 0.5f, wb.y + wb.height * 0.5f, transform.position.z);
+                transform.position = screenBoundries.GetClampedCameraPosition(center);
+            }
+        }
     }
 
     // Update is called once per frame
