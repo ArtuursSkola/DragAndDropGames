@@ -8,10 +8,16 @@ public class HanoiManager : MonoBehaviour
     public DiskUI[] diskPrefabs;           // Array of disk prefabs (Disk0...Disk5)
     public int diskCount = 3;              // 3–6
     public Text movesText;
+    [Header("Winning UI")]
+    public GameObject winningWindow; // assign your inactive panel here
+    public Text winningTimeText;
+    public Text winningMovesText;
 
     private PegUI selectedFrom = null;
     private DiskUI selectedDisk = null;
     private int moves = 0;
+    private float elapsedTime = 0f;
+    private bool isSolved = false;
 
     void Start()
     {
@@ -29,6 +35,17 @@ public class HanoiManager : MonoBehaviour
 
         InitializeDisks();
         UpdateMovesText();
+        // ensure winning window is hidden at start
+        if (winningWindow != null)
+            winningWindow.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (!isSolved)
+        {
+            elapsedTime += Time.unscaledDeltaTime;
+        }
     }
 
     void InitializeDisks()
@@ -100,6 +117,7 @@ public class HanoiManager : MonoBehaviour
             if (pegs[2].disks.Count == diskCount)
             {
                 Debug.Log("Solved in " + moves + " moves!");
+                OnSolved();
             }
         }
 
@@ -118,5 +136,32 @@ public class HanoiManager : MonoBehaviour
         moves = 0;
         InitializeDisks();
         UpdateMovesText();
+
+        // reset timer and state
+        elapsedTime = 0f;
+        isSolved = false;
+        if (winningWindow != null)
+            winningWindow.SetActive(false);
+    }
+
+    private void OnSolved()
+    {
+        isSolved = true;
+        // show winning window and populate info
+        if (winningWindow != null)
+        {
+            if (winningMovesText != null)
+                winningMovesText.text = "Moves: " + moves;
+            if (winningTimeText != null)
+                winningTimeText.text = "Time: " + FormatTime(elapsedTime);
+            winningWindow.SetActive(true);
+        }
+    }
+
+    private string FormatTime(float seconds)
+    {
+        int s = Mathf.FloorToInt(seconds % 60);
+        int m = Mathf.FloorToInt((seconds / 60f) % 60);
+        return string.Format("{0:00}:{1:00}", m, s);
     }
 }

@@ -66,7 +66,7 @@ public class ScreenBoundriesScript : MonoBehaviour
 
     /// <summary>
     /// Adjust camera orthographic size to either show the entire worldBounds (FitAll)
-    /// or to fill the screen without empty space (Fill). Optionally center the camera.
+    /// or to fill the screen without empty sypace (Fill). Optionally center the camera.
     /// </summary>
     public void EnsureCameraFitsWorld(bool centerCamera = true)
     {
@@ -74,8 +74,6 @@ public class ScreenBoundriesScript : MonoBehaviour
             targetCamera = Camera.main;
         if (targetCamera == null)
             return;
-
-        // compute half sizes of the world bounds
         float halfH = worldBounds.height * 0.5f;
         float halfW = worldBounds.width * 0.5f;
 
