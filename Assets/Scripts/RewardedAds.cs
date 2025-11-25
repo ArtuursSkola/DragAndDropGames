@@ -12,6 +12,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     [SerializeField] FlyingObjectsManager flyingObjectManager;
     // whether the rewarded ad is loaded and ready to show
     public bool isReady = false;
+    public static event Action OnRewardGranted;
 
     private void Awake()
     {
@@ -82,6 +83,8 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
                 flyingObjectManager.DestroyAllFlyingObjects();
             _rewardedAdButton.interactable = false;
             StartCoroutine(WaitAndLoad(10f));
+            // notify listeners that reward should be granted
+            try { OnRewardGranted?.Invoke(); } catch { }
         }
 #else
         Debug.Log("Rewarded ad completed!");
