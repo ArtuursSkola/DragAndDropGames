@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BannerAd
   _androidAdUnitId: Banner_Android
-  _bannerAdButton: {fileID: 0}
+  _bannerAdButton: {fileID: 1696206557}
   isBannerVisible: 0
   _bannerPosition: 4
   _autoShowOnLoad: 1
