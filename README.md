@@ -37,4 +37,10 @@ Kā redzams mēs uzvarējam un saņēmām 3 zvaigznītes, jo salikām visas 12 m
 Kā redzams mēs neielikām vismaz 8 mašīnas pareizajās vietās, jo mākoņi un lidmašīnas tās apēda, tādēļ mēs zaudējām un kā redzams mēs varam spēli sākt no sākuma vai aiziet atpakaļ uz sākuma lapu
 ![Gameplay Screenshot](Assets/Images/tobe.png)
 
-
+# Unity 2D Hannoi Tower game
+![Gameplay Screenshot](Assets/Images/hannoi1.png)
+Kā redzams šeit ir trīs stabiņi un 5 klucīši un uzdevums ir tādā pašā secībā, kā tagad salikt visu klucīšus un pēdējo stabiņu, katra kustība ir saskaitīta un ir arī laiks, šeit uzdevums nav dabūt zvaignzes, bet gan mēģināt pārspēt savu rekordu, pēc iespējas ātrāk un mazāk kustības.
+![Gameplay Screenshot](Assets/Images/hannoi2.png)
+Šeit redzams bonusa logs, ja mēs noskatamies reklāmu, tad mums tiek parādīts šāds logs, kas mums 20 sekundes ļauj likt klucīšus neskaitot tos un laiks arī neiet uz priekšu.
+![Gameplay Screenshot](Assets/Images/hannoi3.png)
+Šeit ir redzams uzvaras logs, kas mums parāda cik ātrā laikā visu salikām un ar cik kustībām to izdarijām.
