@@ -18,6 +18,11 @@ public class CameraScript : MonoBehaviour
     public float touchPanSpeed = 1f;
     public ScreenBoundriesScript screenBoundries;
     public Camera cam;
+    [Header("Behavior")]
+    public bool allowZoom = true; // master toggle for zooming; can be disabled per-scene
+
+    // runtime: whether zoom is currently enabled (may be turned off by scene presets)
+    private bool zoomEnabled = true;
 
     float startZoom;
     Vector2 lastTouchPos;
@@ -63,6 +68,8 @@ public class CameraScript : MonoBehaviour
         // initialize max zoom limits based on world bounds
         UpdateMaxZoom();
 
+        // initialize runtime zoom flag (can be overridden per-scene)
+        zoomEnabled = allowZoom;
         // Apply any scene-specific camera configuration immediately (Start covers the initial scene)
         ConfigureForScene(SceneManager.GetActiveScene().name);
     }
@@ -117,7 +124,13 @@ public class CameraScript : MonoBehaviour
                 Vector3 center = new Vector3(wb.x + wb.width * 0.5f, wb.y + wb.height * 0.5f, transform.position.z);
                 transform.position = screenBoundries.GetClampedCameraPosition(center);
             }
+            // disable zoom in the Hanoi scene (we want a fixed view)
+            zoomEnabled = false;
+            return;
         }
+
+        // for other scenes, ensure zoom is enabled according to the inspector toggle
+        zoomEnabled = allowZoom;
     }
 
     // Update is called once per frame
@@ -131,7 +144,7 @@ public class CameraScript : MonoBehaviour
 
         // mouse wheel zoom
         float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if (Mathf.Abs(scroll) > Mathf.Epsilon)
+        if (zoomEnabled && Mathf.Abs(scroll) > Mathf.Epsilon)
         {
             cam.orthographicSize -= scroll * mouseZoomSpeed;
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
@@ -142,22 +155,7 @@ public class CameraScript : MonoBehaviour
             }
         }
 
-        // double click reset (mouse)
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 clickPos = Input.mousePosition;
-            float timeSinceLastTap = Time.time - lastTapTime;
-            if (timeSinceLastTap <= doubleTapMaxDelay && Vector2.Distance(clickPos, lastTouchPos) <= doubleTapMaxDistance)
-            {
-                StartCoroutine(ResetZoomSmooth());
-                lastTapTime = 0f;
-            }
-            else
-            {
-                lastTapTime = Time.time;
-                lastTouchPos = clickPos;
-            }
-        }
+        // removed double-click reset: clicking should not change zoom
 #else
         HandleTouch();
 #endif
@@ -165,7 +163,8 @@ public class CameraScript : MonoBehaviour
         // pinch zoom (touch)
         if (Input.touchCount == 2)
         {
-            HandlePinch();
+            if (zoomEnabled)
+                HandlePinch();
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
             if (screenBoundries != null)
             {
@@ -224,18 +223,7 @@ public class CameraScript : MonoBehaviour
 
         if (t.phase == TouchPhase.Began)
         {
-            float dt = Time.time - lastTapTime;
-            if (dt <= doubleTapMaxDelay &&
-                Vector2.Distance(t.position, lastTouchPos) <= doubleTapMaxDistance)
-            {
-                StartCoroutine(ResetZoomSmooth());
-                lastTapTime = 0f;
-            }
-            else
-            {
-                lastTapTime = Time.time;
-            }
-
+            // start panning; double-tap reset removed so tapping won't change zoom
             lastTouchPos = t.position;
             panFingerId = t.fingerId;
             isTouchPanning = true;
@@ -291,6 +279,8 @@ public class CameraScript : MonoBehaviour
 
     IEnumerator ResetZoomSmooth()
     {
+        if (!zoomEnabled)
+            yield break;
         float duration = 0.25f;
         float elapsed = 0f;
         float initialZoom = cam.orthographicSize;

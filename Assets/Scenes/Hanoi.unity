@@ -377,7 +377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &168307314
 RectTransform:
   m_ObjectHideFlags: 0
@@ -392,6 +392,7 @@ RectTransform:
   m_Children:
   - {fileID: 712380777}
   - {fileID: 1924059535}
+  - {fileID: 1478092025}
   m_Father: {fileID: 1126614031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1118,6 +1119,7 @@ MonoBehaviour:
   touchPanSpeed: 1
   screenBoundries: {fileID: 1684629743}
   cam: {fileID: 519420031}
+  allowZoom: 1
   doubleTapMaxDelay: 0.4
   doubleTapMaxDistance: 100
 --- !u!1 &522821381
@@ -1147,18 +1149,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522821381}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.7898894, y: 0.7898894, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1126614031}
+  m_Father: {fileID: 834227626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1908, y: 585}
-  m_SizeDelta: {x: 157.1046, y: 91.36}
-  m_Pivot: {x: 0.49999985, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 129, y: -162}
+  m_SizeDelta: {x: 157.10461, y: 91.359985}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &522821383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,6 +1315,7 @@ GameObject:
   - component: {fileID: 574702814}
   - component: {fileID: 574702816}
   - component: {fileID: 574702818}
+  - component: {fileID: 574702819}
   m_Layer: 0
   m_Name: Ads
   m_TagString: Untagged
@@ -1399,6 +1402,23 @@ MonoBehaviour:
   _rewardedAdButton: {fileID: 0}
   flyingObjectManager: {fileID: 0}
   isReady: 0
+--- !u!114 &574702819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574702813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e2e03cd93ebce4abfc5fe32da5867f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BannerAd
+  _androidAdUnitId: Banner_Android
+  _bannerAdButton: {fileID: 0}
+  isBannerVisible: 0
+  _bannerPosition: 4
+  _autoShowOnLoad: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1533,7 @@ RectTransform:
   m_Children:
   - {fileID: 1762345108}
   - {fileID: 2078752315}
+  - {fileID: 2023972336}
   m_Father: {fileID: 834227626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -1723,6 +1744,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 522821382}
   - {fileID: 661715623}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2002,14 +2024,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 45391776}
-  - {fileID: 522821382}
   - {fileID: 1708788065}
   - {fileID: 729717992}
   - {fileID: 187288318}
   - {fileID: 168644811}
   - {fileID: 1178490654}
   - {fileID: 168307314}
-  - {fileID: 1478092025}
   - {fileID: 1331000255}
   - {fileID: 837340518}
   - {fileID: 1362501383}
@@ -2382,16 +2402,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478092024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1126614031}
+  m_Father: {fileID: 168307314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -602.85, y: -255}
+  m_AnchoredPosition: {x: 0, y: -332}
   m_SizeDelta: {x: 157.1046, y: 91.36}
   m_Pivot: {x: 0.49999985, y: 0.5}
 --- !u!114 &1478092026
@@ -2772,6 +2792,7 @@ MonoBehaviour:
   touchPanSpeed: 0
   screenBoundries: {fileID: 1684629743}
   cam: {fileID: 519420031}
+  allowZoom: 0
   doubleTapMaxDelay: 0
   doubleTapMaxDistance: 0
 --- !u!1 &1708788064
@@ -2906,7 +2927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1762345105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3444,6 +3465,126 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924059534}
+  m_CullTransparentMesh: 1
+--- !u!1 &2023972335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023972336}
+  - component: {fileID: 2023972339}
+  - component: {fileID: 2023972338}
+  - component: {fileID: 2023972337}
+  m_Layer: 0
+  m_Name: BannerAd
+  m_TagString: BannerAd
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2023972336
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023972335}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 661715623}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -475, y: -478}
+  m_SizeDelta: {x: 124.6943, y: 120.7859}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2023972337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023972335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2023972338}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2023972338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023972335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1436127313454418495, guid: 769c5250a4c0fc746b59d77d541fd63b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2023972339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023972335}
   m_CullTransparentMesh: 1
 --- !u!1 &2069974381
 GameObject:

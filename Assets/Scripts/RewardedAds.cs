@@ -60,12 +60,15 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     {
         Debug.LogWarning("Failde to show rewarded ad!");
         isReady = false;
+        // ensure game is not left paused if ad show failed
+        Time.timeScale = 1f;
         StartCoroutine(WaitAndLoad(5f));
     }
     public void OnUnityAdsShowStart(string placementId)
     {
         // ad is being shown; mark not-ready so Show won't be attempted again
         isReady = false;
+        // pause the game's time while ad is showing
         Time.timeScale = 0f;
     }
     public void OnUnityAdsShowClick(string placementId)
@@ -92,7 +95,9 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             flyingObjectManager.DestroyAllFlyingObjects();
         _rewardedAdButton.interactable = false;
         StartCoroutine(WaitAndLoad(10f));
-        #endif
+#endif
+
+        // Always resume time when the ad finishes (completed or skipped)
         Time.timeScale = 1f;
     }
 
