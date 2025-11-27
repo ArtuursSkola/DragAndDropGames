@@ -111,6 +111,11 @@ public class DiskUI : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, ID
             }
 
             targetPeg.Push(this);
+            // notify manager about the move so it can count moves and check for win
+            if (manager != null)
+            {
+                manager.RegisterMove(sourcePeg, targetPeg, this);
+            }
         }
         else
         {

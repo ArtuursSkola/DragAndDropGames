@@ -325,6 +325,27 @@ public class HanoiManager : MonoBehaviour
         selectedFrom = null;
     }
 
+    // Called by UI drag/drop when a disk has been moved from one peg to another.
+    // Ensures moves are counted consistently and triggers win check.
+    public void RegisterMove(PegUI sourcePeg, PegUI targetPeg, DiskUI disk)
+    {
+        if (isInteractionLocked || isSolved) return;
+
+        // if we are frozen, allow moves but do not count them
+        if (!isFrozen)
+        {
+            moves++;
+            UpdateMovesText();
+        }
+
+        // check win condition: all disks on peg index 2
+        if (pegs != null && pegs.Length > 2 && pegs[2].disks.Count == diskCount)
+        {
+            Debug.Log("Solved in " + moves + " moves! (via drag)");
+            OnSolved();
+        }
+    }
+
     private void UpdateMovesText()
     {
         if (movesText != null)

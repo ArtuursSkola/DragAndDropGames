@@ -16,6 +16,12 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     // if we tried to show an interstitial but it wasn't ready, remember to show it when loaded
     private bool pendingShowOnLoad = false;
     private Coroutine sceneShowCoroutine = null;
+    // prevent duplicate shows in rapid succession
+    private bool isShowing = false;
+    private float lastShowTime = 0f;
+    private const float showCooldownSeconds = 3f;
+    // coroutine for retrying a pending show after cooldown
+    private Coroutine pendingRetryCoroutine = null;
 
     void OnEnable()
     {
@@ -73,20 +79,41 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
         Advertisement.Load(_adUnitId, this);
     }
 
-    public void ShowAd()
+    // Attempts to show the ad. Returns true if a show was started.
+    public bool ShowAd()
     {
+        Debug.Log($"InterstitialAd.ShowAd() called. isReady={isReady} isShowing={isShowing} lastShowTime={lastShowTime} now={Time.time} delta={(Time.time - lastShowTime):F2}s pendingShowOnLoad={pendingShowOnLoad}");
+
+        if (isShowing)
+        {
+            Debug.Log("InterstitialAd: ShowAd called but an ad is already showing; ignoring.");
+            return false;
+        }
+
+        if (Time.time - lastShowTime < showCooldownSeconds)
+        {
+            Debug.Log("InterstitialAd: ShowAd called too soon after previous show; ignoring to avoid duplicates.");
+            return false;
+        }
+
         if (isReady)
         {
-            //
+            Debug.Log("InterstitialAd: Showing ad now.");
             Advertisement.Show(_adUnitId, this);
             isReady = false;
             pendingShowOnLoad = false;
-        } else {
+            isShowing = true;
+            lastShowTime = Time.time;
+            return true;
+        }
+        else
+        {
             Debug.LogWarning("Interestitial ad is not ready yet!");
             // mark that we want to show once it finishes loading
             pendingShowOnLoad = true;
             LoadAd();
-    }
+            return false;
+        }
     }
 
     public void ShowInterstitial()
@@ -125,9 +152,16 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
             attempts++;
             if (isReady)
             {
-                Debug.Log($"InterstitialAd: Ready on attempt {attempts} - showing ad.");
-                ShowAd();
-                yield break;
+                Debug.Log($"InterstitialAd: Ready on attempt {attempts} - attempting to show ad.");
+                if (ShowAd())
+                {
+                    yield break;
+                }
+                else
+                {
+                    Debug.Log("InterstitialAd: ShowAd suppressed (cooldown or already showing) during retry attempts.");
+                    yield break;
+                }
             }
 
             Debug.Log($"InterstitialAd: Not ready on attempt {attempts}, loading and will retry in {delaySeconds}s.");
@@ -154,8 +188,15 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
         OnInterstitialAdReady?.Invoke();
         if (pendingShowOnLoad)
         {
-            Debug.Log("InterstitialAd: pending show detected - showing now.");
-            ShowAd();
+            Debug.Log("InterstitialAd: pending show detected - trying to show now.");
+            bool started = ShowAd();
+            if (!started)
+            {
+                Debug.Log("InterstitialAd: pending show suppressed by cooldown/flag; scheduling retry after cooldown.");
+                // schedule a single retry after the cooldown window
+                if (pendingRetryCoroutine == null)
+                    pendingRetryCoroutine = StartCoroutine(AttemptPendingShowAfterDelay(showCooldownSeconds));
+            }
         }
     }
 
@@ -172,21 +213,26 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
+        // ad finished (either completed or skipped) - clear showing flag and reload
+        isShowing = false;
+        lastShowTime = Time.time;
+
         if (showCompletionState == UnityAdsShowCompletionState.COMPLETED)
         {
             Debug.Log("Interstitial ad watched completely!");
             // Restore time before applying the slow-down effect
             Time.timeScale = 1f;
             StartCoroutine(SlowDownTimeTemporarily(30f));
-            LoadAd();
         }
         else
         {
             Debug.Log("Interstitial ad skipped or not fully watched.");
             // Ensure the game is not left paused when the ad is skipped
             Time.timeScale = 1f;
-            LoadAd();
         }
+
+        // always load next ad
+        LoadAd();
     }
     private IEnumerator SlowDownTimeTemporarily(float seconds)
     {
@@ -203,6 +249,8 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
         Debug.Log("Error showing interstitial ad!");
         // Ensure the game is not left paused on failure
         Time.timeScale = 1f;
+        isShowing = false;
+        lastShowTime = Time.time;
         LoadAd();
     }
 
@@ -210,6 +258,20 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     {
         Debug.Log("Showing intersstitial ad at this moment!");
         Time.timeScale = 0f;
+        // mark showing in case ShowAd was bypassed by another path
+        isShowing = true;
+        lastShowTime = Time.time;
+    }
+    
+    private System.Collections.IEnumerator AttemptPendingShowAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        pendingRetryCoroutine = null;
+        if (pendingShowOnLoad && isReady)
+        {
+            Debug.Log("InterstitialAd: Retry after cooldown - attempting pending show now.");
+            ShowAd();
+        }
     }
     public void SetButton(Button button)
     {

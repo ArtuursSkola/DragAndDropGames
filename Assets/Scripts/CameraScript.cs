@@ -96,9 +96,14 @@ public class CameraScript : MonoBehaviour
         {
             Debug.Log("CameraScript: Applying Hanoi scene camera preset (landscape & fit map)");
 
-            // try to set landscape orientation on mobile devices
+            // Force a strict landscape orientation on mobile devices for the Hanoi scene.
+            // Disable autorotation so the app stays in landscape even if the user holds the device portrait.
             #if !UNITY_EDITOR
             try {
+                Screen.autorotateToPortrait = false;
+                Screen.autorotateToPortraitUpsideDown = false;
+                Screen.autorotateToLandscapeLeft = false;
+                Screen.autorotateToLandscapeRight = false;
                 Screen.orientation = ScreenOrientation.LandscapeLeft;
             } catch { }
             #else
@@ -126,11 +131,87 @@ public class CameraScript : MonoBehaviour
             }
             // disable zoom in the Hanoi scene (we want a fixed view)
             zoomEnabled = false;
+            // ensure orientation is applied after a short delay (works around platform timing)
+            #if !UNITY_EDITOR
+            try { StartCoroutine(EnforceLandscapeLock()); } catch { }
+            #endif
             return;
         }
 
         // for other scenes, ensure zoom is enabled according to the inspector toggle
         zoomEnabled = allowZoom;
+
+        // restore autorotate behavior for non-Hanoi scenes (allow portrait + landscape)
+        #if !UNITY_EDITOR
+        try {
+            Screen.autorotateToPortrait = true;
+            Screen.autorotateToPortraitUpsideDown = true;
+            Screen.autorotateToLandscapeLeft = true;
+            Screen.autorotateToLandscapeRight = true;
+            Screen.orientation = ScreenOrientation.AutoRotation;
+        } catch { }
+        #endif
+    }
+
+    private System.Collections.IEnumerator EnforceLandscapeLock()
+    {
+        // Re-apply the landscape orientation repeatedly for a longer window.
+        // Some devices or OS versions temporarily report portrait before honoring the lock,
+        // so applying several times increases reliability. We'll also add diagnostics and
+        // call the Android Activity API using SENSOR_LANDSCAPE which some devices respect better.
+        float timeout = 3f;
+        float elapsed = 0f;
+        float interval = 0.15f;
+        while (elapsed < timeout)
+        {
+            try
+            {
+                // disable autorotate entirely and force LandscapeLeft at Unity level
+                Screen.autorotateToPortrait = false;
+                Screen.autorotateToPortraitUpsideDown = false;
+                Screen.autorotateToLandscapeLeft = false;
+                Screen.autorotateToLandscapeRight = false;
+                Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+                // Diagnostic: log current Unity-side orientation and autorotate flags
+                Debug.Log($"CameraScript: EnforceLandscapeLock iteration elapsed={elapsed:F2}s; Screen.orientation={Screen.orientation}; autoP={Screen.autorotateToPortrait} autoPU={Screen.autorotateToPortraitUpsideDown} autoL={Screen.autorotateToLandscapeLeft} autoR={Screen.autorotateToLandscapeRight}");
+
+                // Additionally request the Android activity to lock orientation at the OS level.
+                // Use SENSOR_LANDSCAPE which allows both landscape-left and landscape-right and
+                // is often more reliable across devices.
+                #if UNITY_ANDROID && !UNITY_EDITOR
+                try
+                {
+                    using (var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+                    {
+                        var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                        if (activity != null)
+                        {
+                            // ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE = 6
+                            const int SCREEN_ORIENTATION_SENSOR_LANDSCAPE = 6;
+                            activity.Call("setRequestedOrientation", SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+                            Debug.Log("CameraScript: Called activity.setRequestedOrientation(SENSOR_LANDSCAPE)");
+                        }
+                        else
+                        {
+                            Debug.Log("CameraScript: activity was null when calling setRequestedOrientation");
+                        }
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogWarning("CameraScript: Exception while calling Android activity.setRequestedOrientation: " + ex);
+                }
+                #endif
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning("CameraScript: Exception in EnforceLandscapeLock loop: " + ex);
+            }
+
+            yield return new WaitForSeconds(interval);
+            elapsed += interval;
+        }
     }
 
     // Update is called once per frame
@@ -203,8 +284,8 @@ public class CameraScript : MonoBehaviour
         }
 
         // If not edge panning, optionally follow cursor center (existing behavior)
-    Vector3 screenPoint = new Vector3(mouse.x, mouse.y, cam.nearClipPlane);
-    Vector3 targetWorld = cam.ScreenToWorldPoint(screenPoint);
+        Vector3 screenPoint = new Vector3(mouse.x, mouse.y, cam.nearClipPlane);
+        Vector3 targetWorld = cam.ScreenToWorldPoint(screenPoint);
         Vector3 desired = new Vector3(targetWorld.x, targetWorld.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, desired, mouseFollowSpeed * Time.deltaTime);
         if (screenBoundries != null)
@@ -223,7 +304,6 @@ public class CameraScript : MonoBehaviour
 
         if (t.phase == TouchPhase.Began)
         {
-            // start panning; double-tap reset removed so tapping won't change zoom
             lastTouchPos = t.position;
             panFingerId = t.fingerId;
             isTouchPanning = true;
